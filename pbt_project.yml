@@ -1,0 +1,49 @@
+name: prophecy-training-example
+description: ''
+version: 0.0.1
+author: nimbus@simpledatalabs.com
+language: python
+pipelines:
+  pipelines/farmers-markets-irs:
+    name: farmers-markets-irs
+    description: ''
+    author: nimbus@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-06-21 21:32:54'
+    datasets:
+      inputs:
+      - 1700/datasets/farmers-markets
+      - 1700/datasets/irs-zipcode-data
+      outputs: []
+    dependencies: {}
+datasets:
+  datasets/farmers-markets:
+    name: farmers-markets
+    description: ''
+    author: nimbus@simpledatalabs.com
+    createdAt: '2022-06-21 21:33:49'
+    physicalDatasets:
+      demos:
+        fabricId: 382
+        datasetType: File
+        description: ''
+        author: nimbus@simpledatalabs.com
+        createdAt: '2022-06-21 21:33:49'
+  datasets/irs-zipcode-data:
+    name: irs-zipcode-data
+    description: ''
+    author: nimbus@simpledatalabs.com
+    createdAt: '2022-06-21 21:34:29'
+    physicalDatasets:
+      demos:
+        fabricId: 382
+        datasetType: File
+        description: ''
+        author: nimbus@simpledatalabs.com
+        createdAt: '2022-06-21 21:34:29'
+jobs: {}
+libraries: []
+subgraphs: {}
+dependencies: []
+template: '[]'
