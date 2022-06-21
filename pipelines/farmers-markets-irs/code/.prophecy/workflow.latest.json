@@ -86,42 +86,6 @@
     "sourcePort" : "MRUyDBUS0qgyLUkBI_s5m$$lQY_DepJ0XJVmoEGHNBQr",
     "target" : "BKfj7FhwIUo51cPDED1cV$$ERdTXAT-w1Yun4TCeHWOy",
     "targetPort" : "siHiegQWwyVZNHVnS1StX$$xjDz2VyuAxzke47tLAtD5"
-  }, {
-    "id" : "0HjF1FJYrXc5YRdFu2uUV",
-    "source" : "_GiFXBzO_NnB4iIsyRM0T$$V8hemfRGNZuQVK4vHELdK",
-    "sourcePort" : "ASJRyxNpCf6bMQdv5RZh1$$s58ROYh4qPn1zeTNghc6q",
-    "target" : "xHwwHGqkw2WVAJBZH0Vl7$$dEkT8usowkTN9xcYFduVw",
-    "targetPort" : "cnjmxMkQ2NOehg_6mCqW2$$ks89ZcMRyUgh1Cowe3iCP"
-  }, {
-    "id" : "RDYeREdimrq64z44WSaW2",
-    "source" : "xHwwHGqkw2WVAJBZH0Vl7$$dEkT8usowkTN9xcYFduVw",
-    "sourcePort" : "DlYm8el42fMD8Xz5eUv2J$$KS6j7P9skPSgBL_PlZhfg",
-    "target" : "wCkUROBul4BWe8yK0kg8c$$bZSWt5w8j32HYIeiwMjc_",
-    "targetPort" : "kdlIMlCxZ53L0OMrQfodN$$yEX3wUNulkpfDhHaCELPO"
-  }, {
-    "id" : "6MpNmAQqXM8YuB-tpZtpm",
-    "source" : "wCkUROBul4BWe8yK0kg8c$$bZSWt5w8j32HYIeiwMjc_",
-    "sourcePort" : "xW_Hz7ZWbThy6JL4wrrAj$$TvFT8aS9NLCM_esQDoHkX",
-    "target" : "hwZnZ9P49Ztl-XZhBOJh-$$Th-hzTqgLKeoiNu6dJhyA",
-    "targetPort" : "QFwMAeAR-UpkR_mfoK0SE$$ImBmIjP8QjrDHZ6x_ePgK"
-  }, {
-    "id" : "FLpEaF_Do1Q4nVp1as0UO",
-    "source" : "_GiFXBzO_NnB4iIsyRM0T$$V8hemfRGNZuQVK4vHELdK",
-    "sourcePort" : "ASJRyxNpCf6bMQdv5RZh1$$s58ROYh4qPn1zeTNghc6q",
-    "target" : "RA9bior1aD8yMYR1kODX7$$oJFJWJ6N5e1xYhG6fhgKm",
-    "targetPort" : "8tUefKPsFkzIHlu_fnGng$$vIUmZrLsJZF7JX-_mJs5m"
-  }, {
-    "id" : "CkFGV1cRFqmdTmmOuaNo_",
-    "source" : "RA9bior1aD8yMYR1kODX7$$oJFJWJ6N5e1xYhG6fhgKm",
-    "sourcePort" : "wzBtx-wzySODoOmUb4nv1$$2-tsE0bG5-mD26NIzYtsc",
-    "target" : "XMnoQfKlj8EG15U9znlGD$$qjhJnvHGaMz4pMdXzYKo8",
-    "targetPort" : "othpacy8eXCK4GatJSIXz$$_7Uf8ZE9oPfhn-u4rFzYF"
-  }, {
-    "id" : "btOiKHUmJIw0WUyXdqCZ9",
-    "source" : "XMnoQfKlj8EG15U9znlGD$$qjhJnvHGaMz4pMdXzYKo8",
-    "sourcePort" : "2VvtnrNC0x0rz9nbZ4U8T$$_Lx5lsL4NKdhnWpqaZx5U",
-    "target" : "QvRx3JxBzkcj98-F6zvkQ$$ewLWfQ-np8bYg2qnFFr2P",
-    "targetPort" : "7RN5fP-kjRRs8Gp6nSNjV$$yrcLsv-sPJvpbKkBt1Bkn"
   } ],
   "processes" : {
     "gbYKKVua7scDsVkSKtFE8$$Y0_hCWCy5Dl_zyms6nVrV" : {
@@ -239,35 +203,6 @@
         "expressions" : [ ]
       }
     },
-    "QvRx3JxBzkcj98-F6zvkQ$$ewLWfQ-np8bYg2qnFFr2P" : {
-      "id" : "QvRx3JxBzkcj98-F6zvkQ$$ewLWfQ-np8bYg2qnFFr2P",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "Reformat_7",
-        "slug" : "Reformat_7",
-        "x" : 1077.45,
-        "y" : 784.1997070312498,
-        "language" : "python",
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "7RN5fP-kjRRs8Gp6nSNjV$$yrcLsv-sPJvpbKkBt1Bkn",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "ru0NT80R08zjCY_Bl4GJ0$$2l4w0lsJKo8C89VZ514jT",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ ]
-      }
-    },
     "QqtGtL3X1JFIp-flRGAh1$$kQLX0lwsJLBfIhfHf1kzD" : {
       "id" : "QqtGtL3X1JFIp-flRGAh1$$kQLX0lwsJLBfIhfHf1kzD",
       "component" : "Reformat",
@@ -295,70 +230,6 @@
       "properties" : {
         "columnsSelector" : [ ],
         "expressions" : [ ]
-      }
-    },
-    "xHwwHGqkw2WVAJBZH0Vl7$$dEkT8usowkTN9xcYFduVw" : {
-      "id" : "xHwwHGqkw2WVAJBZH0Vl7$$dEkT8usowkTN9xcYFduVw",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "Reformat_5",
-        "slug" : "Reformat_5",
-        "x" : 694.45,
-        "y" : 616.5,
-        "language" : "python",
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "cnjmxMkQ2NOehg_6mCqW2$$ks89ZcMRyUgh1Cowe3iCP",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "DlYm8el42fMD8Xz5eUv2J$$KS6j7P9skPSgBL_PlZhfg",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "columnsSelector" : [ "cnjmxMkQ2NOehg_6mCqW2$$ks89ZcMRyUgh1Cowe3iCP##agi_stub", "cnjmxMkQ2NOehg_6mCqW2$$ks89ZcMRyUgh1Cowe3iCP##N1", "cnjmxMkQ2NOehg_6mCqW2$$ks89ZcMRyUgh1Cowe3iCP##zipcode", "cnjmxMkQ2NOehg_6mCqW2$$ks89ZcMRyUgh1Cowe3iCP##STATE", "cnjmxMkQ2NOehg_6mCqW2$$ks89ZcMRyUgh1Cowe3iCP##STATEFIPS" ],
-        "expressions" : [ {
-          "target" : "zipcode",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "zipcode"
-          },
-          "description" : ""
-        }, {
-          "target" : "agi_stub",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "agi_stub"
-          },
-          "description" : ""
-        }, {
-          "target" : "STATEFIPS",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "STATEFIPS"
-          },
-          "description" : ""
-        }, {
-          "target" : "STATE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "STATE"
-          },
-          "description" : ""
-        }, {
-          "target" : "N1",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "N1"
-          },
-          "description" : ""
-        } ]
       }
     },
     "1We4nap3dEhZx6jjdSw6u$$wfYl839GDVV8zzysC92rk" : {
@@ -410,35 +281,6 @@
           "description" : "",
           "_row_id" : null
         } ]
-      }
-    },
-    "hwZnZ9P49Ztl-XZhBOJh-$$Th-hzTqgLKeoiNu6dJhyA" : {
-      "id" : "hwZnZ9P49Ztl-XZhBOJh-$$Th-hzTqgLKeoiNu6dJhyA",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "Reformat_6",
-        "slug" : "Reformat_6",
-        "x" : 1099.4500000000003,
-        "y" : 605.5,
-        "language" : "python",
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "QFwMAeAR-UpkR_mfoK0SE$$ImBmIjP8QjrDHZ6x_ePgK",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "QLnZCpeRdJ3A3YZhcLKlO$$ERdfdo6jLuqphNh7bR81y",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ ]
       }
     },
     "_GiFXBzO_NnB4iIsyRM0T$$V8hemfRGNZuQVK4vHELdK" : {
@@ -495,38 +337,6 @@
         "expressions" : [ ]
       }
     },
-    "XMnoQfKlj8EG15U9znlGD$$qjhJnvHGaMz4pMdXzYKo8" : {
-      "id" : "XMnoQfKlj8EG15U9znlGD$$qjhJnvHGaMz4pMdXzYKo8",
-      "component" : "Filter",
-      "metadata" : {
-        "label" : "Filter_2",
-        "slug" : "Filter_2",
-        "x" : 830.4500000000003,
-        "y" : 778.1997070312498,
-        "language" : "python",
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "othpacy8eXCK4GatJSIXz$$_7Uf8ZE9oPfhn-u4rFzYF",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "2VvtnrNC0x0rz9nbZ4U8T$$_Lx5lsL4NKdhnWpqaZx5U",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "columnsSelector" : [ "othpacy8eXCK4GatJSIXz$$_7Uf8ZE9oPfhn-u4rFzYF##states" ],
-        "condition" : {
-          "format" : "sql",
-          "expression" : "size(states) > 1"
-        }
-      }
-    },
     "bpXu-Hun__7xIF_ykAqNA$$LrzKw7EPIzlJ9wMkK8cz1" : {
       "id" : "bpXu-Hun__7xIF_ykAqNA$$LrzKw7EPIzlJ9wMkK8cz1",
       "component" : "Aggregate",
@@ -575,93 +385,6 @@
           },
           "description" : "",
           "_row_id" : null
-        } ]
-      }
-    },
-    "RA9bior1aD8yMYR1kODX7$$oJFJWJ6N5e1xYhG6fhgKm" : {
-      "id" : "RA9bior1aD8yMYR1kODX7$$oJFJWJ6N5e1xYhG6fhgKm",
-      "component" : "Aggregate",
-      "metadata" : {
-        "label" : "Aggregate_3",
-        "slug" : "Aggregate_3",
-        "x" : 684.45,
-        "y" : 766.1997070312498,
-        "language" : "python",
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "8tUefKPsFkzIHlu_fnGng$$vIUmZrLsJZF7JX-_mJs5m",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "wzBtx-wzySODoOmUb4nv1$$2-tsE0bG5-mD26NIzYtsc",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "allIns" : false,
-        "doPivot" : false,
-        "aggregate" : [ {
-          "target" : "states",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "collect_set(STATE)"
-          },
-          "description" : "",
-          "_row_id" : null
-        } ],
-        "pivotColumn" : null,
-        "pivotValues" : [ ],
-        "activeTab" : "aggregate",
-        "columnsSelector" : [ "8tUefKPsFkzIHlu_fnGng$$vIUmZrLsJZF7JX-_mJs5m##zipcode", "8tUefKPsFkzIHlu_fnGng$$vIUmZrLsJZF7JX-_mJs5m##STATE" ],
-        "groupBy" : [ {
-          "target" : "zipcode",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "zipcode"
-          },
-          "description" : "",
-          "_row_id" : null
-        } ]
-      }
-    },
-    "wCkUROBul4BWe8yK0kg8c$$bZSWt5w8j32HYIeiwMjc_" : {
-      "id" : "wCkUROBul4BWe8yK0kg8c$$bZSWt5w8j32HYIeiwMjc_",
-      "component" : "Deduplicate",
-      "metadata" : {
-        "label" : "Deduplicate_1",
-        "slug" : "Deduplicate_1",
-        "x" : 878.4500000000002,
-        "y" : 617.5,
-        "language" : "python",
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "kdlIMlCxZ53L0OMrQfodN$$yEX3wUNulkpfDhHaCELPO",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "xW_Hz7ZWbThy6JL4wrrAj$$TvFT8aS9NLCM_esQDoHkX",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "columnsSelector" : [ "kdlIMlCxZ53L0OMrQfodN$$yEX3wUNulkpfDhHaCELPO##zipcode", "kdlIMlCxZ53L0OMrQfodN$$yEX3wUNulkpfDhHaCELPO##STATE", "kdlIMlCxZ53L0OMrQfodN$$yEX3wUNulkpfDhHaCELPO##agi_stub" ],
-        "dedupType" : "first",
-        "dedupColumns" : [ {
-          "colName" : "zipcode"
-        }, {
-          "colName" : "agi_stub"
-        }, {
-          "colName" : "STATE"
         } ]
       }
     }
