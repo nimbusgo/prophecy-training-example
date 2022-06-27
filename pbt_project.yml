@@ -1,6 +1,6 @@
 name: prophecy-training-example
 description: ''
-version: 0.0.1
+version: '1.0'
 author: nimbus@simpledatalabs.com
 language: python
 buildSystem: wheel
