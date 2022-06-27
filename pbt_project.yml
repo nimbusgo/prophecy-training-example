@@ -3,6 +3,7 @@ description: ''
 version: 0.0.1
 author: nimbus@simpledatalabs.com
 language: python
+buildSystem: wheel
 pipelines:
   pipelines/farmers-markets-irs:
     name: farmers-markets-irs
@@ -15,6 +16,31 @@ pipelines:
       inputs:
       - 1700/datasets/farmers-markets
       - 1700/datasets/irs-zipcode-data
+      outputs: []
+    dependencies: {}
+  pipelines/ingest_hospital_beds:
+    name: ingest_hospital_beds
+    description: ''
+    author: nimbus@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-06-27 17:42:44'
+    datasets:
+      inputs:
+      - 1700/datasets/hospital_beds_input
+      outputs:
+      - 1700/datasets/hospital_beds
+    dependencies: {}
+  pipelines/hospital_beds_report:
+    name: hospital_beds_report
+    description: ''
+    author: nimbus@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-06-27 19:05:17'
+    datasets:
+      inputs:
+      - 1700/datasets/hospital_beds
       outputs: []
     dependencies: {}
 datasets:
@@ -42,8 +68,32 @@ datasets:
         description: ''
         author: nimbus@simpledatalabs.com
         createdAt: '2022-06-21 21:34:29'
+  datasets/hospital_beds_input:
+    name: hospital_beds_input
+    description: ''
+    author: nimbus@simpledatalabs.com
+    createdAt: '2022-06-27 17:46:47'
+    physicalDatasets:
+      dev:
+        fabricId: 51
+        datasetType: File
+        description: ''
+        author: nimbus@simpledatalabs.com
+        createdAt: '2022-06-27 17:46:47'
+  datasets/hospital_beds:
+    name: hospital_beds
+    description: ''
+    author: nimbus@simpledatalabs.com
+    createdAt: '2022-06-27 17:52:57'
+    physicalDatasets:
+      dev:
+        fabricId: 51
+        datasetType: File
+        description: ''
+        author: nimbus@simpledatalabs.com
+        createdAt: '2022-06-27 17:52:57'
+templates: {}
 jobs: {}
 libraries: []
 subgraphs: {}
 dependencies: []
-template: '[]'

@@ -1,0 +1,186 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "51",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : {
+        "dev" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "test" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "Remove" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "demos" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      }
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    }
+  },
+  "connections" : [ {
+    "id" : "l-HiPAYalcIotWGsloYf0",
+    "source" : "PYdvEEOC_-HeftU0SQvEh$$A7cadYJPuS80moNAb2Uur",
+    "sourcePort" : "75BuGz1gmHh2c9RvcM73c$$4K-A3BlbpVtJ-PEz9s1kK",
+    "target" : "F2hH1fpu2n8QH9KEPBk-6$$9D2cKJ4EJDIIKs4xTIFzE",
+    "targetPort" : "EuDwBpDGkuuUb2PvIHb1p$$j-AS2YHdiTHhE4DjyY7Ay"
+  }, {
+    "id" : "geaAxLAj0zmGLoHvbejCy",
+    "source" : "F2hH1fpu2n8QH9KEPBk-6$$9D2cKJ4EJDIIKs4xTIFzE",
+    "sourcePort" : "VgILFxyfdWD2OWlfAkp0x$$T4ucpjrZ8BRx-Gxm8wtQW",
+    "target" : "OGq6CgWE70_lIO3_scj1e$$2i-2d1nApvv0igSa_7CAu",
+    "targetPort" : "j2bz_MYZg4MDb-w-3fTbe$$866olo3DzNqQdgzXZO0Rp"
+  } ],
+  "processes" : {
+    "OGq6CgWE70_lIO3_scj1e$$2i-2d1nApvv0igSa_7CAu" : {
+      "id" : "OGq6CgWE70_lIO3_scj1e$$2i-2d1nApvv0igSa_7CAu",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 765,
+        "y" : 213,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "j2bz_MYZg4MDb-w-3fTbe$$866olo3DzNqQdgzXZO0Rp",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "Pwn9GDOKYp6x8kCPz57Xn$$YYkg5DjqaGUoY2kPfKh83",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      }
+    },
+    "F2hH1fpu2n8QH9KEPBk-6$$9D2cKJ4EJDIIKs4xTIFzE" : {
+      "id" : "F2hH1fpu2n8QH9KEPBk-6$$9D2cKJ4EJDIIKs4xTIFzE",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "slug" : "Aggregate_1",
+        "x" : 501,
+        "y" : 210,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "EuDwBpDGkuuUb2PvIHb1p$$j-AS2YHdiTHhE4DjyY7Ay",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "VgILFxyfdWD2OWlfAkp0x$$T4ucpjrZ8BRx-Gxm8wtQW",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "utilized_beds",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(BED_UTILIZATION * NUM_LICENSED_BEDS)"
+          },
+          "description" : "",
+          "_row_id" : ""
+        } ],
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "EuDwBpDGkuuUb2PvIHb1p$$j-AS2YHdiTHhE4DjyY7Ay##BED_UTILIZATION", "EuDwBpDGkuuUb2PvIHb1p$$j-AS2YHdiTHhE4DjyY7Ay##date_string", "EuDwBpDGkuuUb2PvIHb1p$$j-AS2YHdiTHhE4DjyY7Ay##NUM_LICENSED_BEDS" ],
+        "groupBy" : [ {
+          "target" : "date_string",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "date_string"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ]
+      }
+    },
+    "PYdvEEOC_-HeftU0SQvEh$$A7cadYJPuS80moNAb2Uur" : {
+      "id" : "PYdvEEOC_-HeftU0SQvEh$$A7cadYJPuS80moNAb2Uur",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "hospital_beds",
+        "slug" : "hospital_beds",
+        "x" : 285,
+        "y" : 238,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "75BuGz1gmHh2c9RvcM73c$$4K-A3BlbpVtJ-PEz9s1kK",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "1700/datasets/hospital_beds"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}

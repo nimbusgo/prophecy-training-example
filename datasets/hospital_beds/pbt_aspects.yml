@@ -1,0 +1,88 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: X
+    type: double
+    nullable: true
+    metadata: {}
+  - name: Y
+    type: double
+    nullable: true
+    metadata: {}
+  - name: OBJECTID
+    type: integer
+    nullable: true
+    metadata: {}
+  - name: HOSPITAL_NAME
+    type: string
+    nullable: true
+    metadata: {}
+  - name: HOSPITAL_TYPE
+    type: string
+    nullable: true
+    metadata: {}
+  - name: HQ_ADDRESS
+    type: string
+    nullable: true
+    metadata: {}
+  - name: HQ_ADDRESS1
+    type: string
+    nullable: true
+    metadata: {}
+  - name: HQ_CITY
+    type: string
+    nullable: true
+    metadata: {}
+  - name: HQ_STATE
+    type: string
+    nullable: true
+    metadata: {}
+  - name: HQ_ZIP_CODE
+    type: integer
+    nullable: true
+    metadata: {}
+  - name: COUNTY_NAME
+    type: string
+    nullable: true
+    metadata: {}
+  - name: STATE_NAME
+    type: string
+    nullable: true
+    metadata: {}
+  - name: STATE_FIPS
+    type: integer
+    nullable: true
+    metadata: {}
+  - name: CNTY_FIPS
+    type: integer
+    nullable: true
+    metadata: {}
+  - name: FIPS
+    type: integer
+    nullable: true
+    metadata: {}
+  - name: NUM_LICENSED_BEDS
+    type: integer
+    nullable: true
+    metadata: {}
+  - name: NUM_STAFFED_BEDS
+    type: integer
+    nullable: true
+    metadata: {}
+  - name: NUM_ICU_BEDS
+    type: integer
+    nullable: true
+    metadata: {}
+  - name: BED_UTILIZATION
+    type: double
+    nullable: true
+    metadata: {}
+  - name: Potential_Increase_In_Bed_Capac
+    type: integer
+    nullable: true
+    metadata: {}
+  - name: date_string
+    type: string
+    nullable: false
+    metadata: {}
