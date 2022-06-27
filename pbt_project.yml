@@ -3,6 +3,7 @@ description: ''
 version: 0.0.1
 author: nimbus@simpledatalabs.com
 language: python
+buildSystem: wheel
 pipelines:
   pipelines/farmers-markets-irs:
     name: farmers-markets-irs
@@ -15,7 +16,9 @@ pipelines:
       inputs:
       - 1700/datasets/farmers-markets
       - 1700/datasets/irs-zipcode-data
-      outputs: []
+      outputs:
+      - 1700/datasets/zip_delta
+      - 1700/datasets/zip_delta_table
     dependencies: {}
 datasets:
   datasets/farmers-markets:
@@ -42,8 +45,32 @@ datasets:
         description: ''
         author: nimbus@simpledatalabs.com
         createdAt: '2022-06-21 21:34:29'
+  datasets/zip_delta:
+    name: zip_delta
+    description: ''
+    author: nimbus@simpledatalabs.com
+    createdAt: '2022-06-21 23:33:49'
+    physicalDatasets:
+      demos:
+        fabricId: 382
+        datasetType: File
+        description: ''
+        author: nimbus@simpledatalabs.com
+        createdAt: '2022-06-21 23:33:49'
+  datasets/zip_delta_table:
+    name: zip_delta_table
+    description: ''
+    author: nimbus@simpledatalabs.com
+    createdAt: '2022-06-21 23:35:44'
+    physicalDatasets:
+      demos:
+        fabricId: 382
+        datasetType: Database
+        description: ''
+        author: nimbus@simpledatalabs.com
+        createdAt: '2022-06-21 23:35:44'
+templates: {}
 jobs: {}
 libraries: []
 subgraphs: {}
 dependencies: []
-template: '[]'
