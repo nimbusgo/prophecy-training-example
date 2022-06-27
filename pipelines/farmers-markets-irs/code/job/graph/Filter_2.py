@@ -5,4 +5,4 @@ from job.config.ConfigStore import *
 from job.udfs.UDFs import *
 
 def Filter_2(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.filter((size(col("states")) > lit(1)))
+    return in0.filter(lit(True))
