@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 from job.config.ConfigStore import *
 from job.udfs.UDFs import *
 
-def Reformat_11(spark: SparkSession, in0: DataFrame) -> DataFrame:
+def CalcCases(spark: SparkSession, in0: DataFrame) -> DataFrame:
     return in0.select(
         (col("has_fm") & col("is_high_income")).alias("has_fm_high_income"), 
         (col("has_fm") & ~ col("is_high_income")).alias("has_fm_low_income"), 

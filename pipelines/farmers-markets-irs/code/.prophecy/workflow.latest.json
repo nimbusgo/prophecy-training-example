@@ -118,26 +118,26 @@
     "target" : "0A-uX-CfOhxXbeoBftZ0_$$CjwNS5iAq16iMcTuMFy6u",
     "targetPort" : "JEALQcZzV9QqpqzccZKAe$$BbB2e0xt2QPi7zcgtZJ_4"
   }, {
-    "id" : "SJvdhQqbFCo_NitPhNZki",
-    "source" : "0A-uX-CfOhxXbeoBftZ0_$$CjwNS5iAq16iMcTuMFy6u",
-    "sourcePort" : "QW_Hp0hCCtUnvYH2LA1ct$$CCcB38IFxi8-Tzir7rU9u",
-    "target" : "F9poMGKHnf9NAxZsXqjDw$$ghlKhE5bObV0r7xX-qocZ",
-    "targetPort" : "ZCpudsZWfhjnIq6clR7bD$$AWS-hVlCV2tZpPuFEC3RQ"
-  }, {
     "id" : "cznK7yLfHLfLsAVq70_cw",
     "source" : "0A-uX-CfOhxXbeoBftZ0_$$CjwNS5iAq16iMcTuMFy6u",
     "sourcePort" : "QW_Hp0hCCtUnvYH2LA1ct$$CCcB38IFxi8-Tzir7rU9u",
     "target" : "YOshD4mtpOAEVKQ_5aUM9$$gviJQ8S1mAPMeu6b1Z6it",
     "targetPort" : "hAgHzSxeZVA-6z0nUi2TC$$MAVlPEYPua3sR98BoqRHt"
+  }, {
+    "id" : "7VTWN0UVjzaMZXpSxJttI",
+    "source" : "YOshD4mtpOAEVKQ_5aUM9$$gviJQ8S1mAPMeu6b1Z6it",
+    "sourcePort" : "N9w_9ScxoNdujm8r2h8tN$$Yg-6apRdEmAFHlJXNitZR",
+    "target" : "6OTksWilEIH_vzPT1JfF_$$6tA6aJrt1NAYgSVR5r27m",
+    "targetPort" : "QjD0EI329tONyxw0gsYWE$$X2FGfKd5WzSy7_rX495Ev"
   } ],
   "processes" : {
     "U6sOJd3ZLPhkDMscdkEyC$$dHjqcmZiI3oRb8eSkkP6k" : {
       "id" : "U6sOJd3ZLPhkDMscdkEyC$$dHjqcmZiI3oRb8eSkkP6k",
       "component" : "Aggregate",
       "metadata" : {
-        "label" : "GroupByZip",
-        "slug" : "GroupByZip",
-        "x" : 720.0008556391274,
+        "label" : "SumIncomeBracketsByZip",
+        "slug" : "SumIncomeBracketsByZip",
+        "x" : 720.000506585495,
         "y" : 320,
         "language" : "python",
         "phase" : 0,
@@ -206,7 +206,7 @@
       "metadata" : {
         "label" : "CastDataTypes",
         "slug" : "CastDataTypes",
-        "x" : 520.0005040801049,
+        "x" : 520.000423790741,
         "y" : 320,
         "language" : "python",
         "phase" : 0,
@@ -258,7 +258,7 @@
       "metadata" : {
         "label" : "FarmersMarketsSource",
         "slug" : "FarmersMarketsSource",
-        "x" : 520.0007952753227,
+        "x" : 520.0007580950482,
         "y" : 120,
         "language" : "python",
         "phase" : 0,
@@ -283,9 +283,9 @@
       "id" : "givGNTH6ffHG5L15FuL-H$$hU5yLu8wjG5_BVK-y1v_v",
       "component" : "Join",
       "metadata" : {
-        "label" : "Join_1",
-        "slug" : "Join_1",
-        "x" : 1120.0002403425112,
+        "label" : "JoinFarmersMarketsAndIncome",
+        "slug" : "JoinFarmersMarketsAndIncome",
+        "x" : 1120.0009668674888,
         "y" : 220,
         "language" : "python",
         "phase" : 0,
@@ -332,7 +332,7 @@
       "metadata" : {
         "label" : "FilterOutBadZips",
         "slug" : "FilterOutBadZips",
-        "x" : 320.00058734338,
+        "x" : 320.0009034764557,
         "y" : 320,
         "language" : "python",
         "phase" : 0,
@@ -360,47 +360,13 @@
         }
       }
     },
-    "F9poMGKHnf9NAxZsXqjDw$$ghlKhE5bObV0r7xX-qocZ" : {
-      "id" : "F9poMGKHnf9NAxZsXqjDw$$ghlKhE5bObV0r7xX-qocZ",
-      "component" : "Filter",
-      "metadata" : {
-        "label" : "Filter_2",
-        "slug" : "Filter_2",
-        "x" : 1939.8829528808592,
-        "y" : 209.80000000000013,
-        "language" : "python",
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "ZCpudsZWfhjnIq6clR7bD$$AWS-hVlCV2tZpPuFEC3RQ",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "Jhe_iCA9oObTJdYoum3pr$$9iDiKOaoWtcEyFc1A2dZq",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "condition" : {
-          "format" : "sql",
-          "expression" : "true"
-        }
-      }
-    },
     "CcQ378yKaOzliNXblEhYx$$h8weA19Uiih2DyMJtQVt0" : {
       "id" : "CcQ378yKaOzliNXblEhYx$$h8weA19Uiih2DyMJtQVt0",
       "component" : "Filter",
       "metadata" : {
         "label" : "FilterOutNullZips",
         "slug" : "FilterOutNullZips",
-        "x" : 720.000928684029,
+        "x" : 720.000362399852,
         "y" : 120,
         "language" : "python",
         "phase" : 0,
@@ -432,9 +398,9 @@
       "id" : "0A-uX-CfOhxXbeoBftZ0_$$CjwNS5iAq16iMcTuMFy6u",
       "component" : "Reformat",
       "metadata" : {
-        "label" : "Reformat_13",
-        "slug" : "Reformat_13",
-        "x" : 1720.000483872724,
+        "label" : "SumCases",
+        "slug" : "SumCases",
+        "x" : 1720.0006449096345,
         "y" : 220,
         "language" : "python",
         "phase" : 0,
@@ -455,7 +421,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ "JEALQcZzV9QqpqzccZKAe$$BbB2e0xt2QPi7zcgtZJ_4##no_fm_low_income", "JEALQcZzV9QqpqzccZKAe$$BbB2e0xt2QPi7zcgtZJ_4##has_fm_high_income", "JEALQcZzV9QqpqzccZKAe$$BbB2e0xt2QPi7zcgtZJ_4##has_fm_low_income", "JEALQcZzV9QqpqzccZKAe$$BbB2e0xt2QPi7zcgtZJ_4##no_fm_high_income" ],
+        "columnsSelector" : [ "JEALQcZzV9QqpqzccZKAe$$BbB2e0xt2QPi7zcgtZJ_4##no_fm_low_income", "JEALQcZzV9QqpqzccZKAe$$BbB2e0xt2QPi7zcgtZJ_4##no_fm_high_income", "JEALQcZzV9QqpqzccZKAe$$BbB2e0xt2QPi7zcgtZJ_4##has_fm_low_income", "JEALQcZzV9QqpqzccZKAe$$BbB2e0xt2QPi7zcgtZJ_4##has_fm", "JEALQcZzV9QqpqzccZKAe$$BbB2e0xt2QPi7zcgtZJ_4##has_fm_high_income" ],
         "expressions" : [ {
           "target" : "has_fm_high_income",
           "expression" : {
@@ -491,6 +457,20 @@
             "expression" : "count(1)"
           },
           "description" : ""
+        }, {
+          "target" : "has_fm",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(if(has_fm, 1, 0))"
+          },
+          "description" : ""
+        }, {
+          "target" : "no_fm",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(if(!has_fm, 1, 0))"
+          },
+          "description" : ""
         } ]
       }
     },
@@ -498,9 +478,9 @@
       "id" : "UYOAW30-drlNFNzQZoFLq$$bEE6I_2R-fJpVvpZrifPm",
       "component" : "Reformat",
       "metadata" : {
-        "label" : "Reformat_9",
-        "slug" : "Reformat_9",
-        "x" : 920.0004810179475,
+        "label" : "CalcIsHighIncome",
+        "slug" : "CalcIsHighIncome",
+        "x" : 920.0009224045378,
         "y" : 320,
         "language" : "python",
         "phase" : 0,
@@ -567,13 +547,40 @@
         } ]
       }
     },
+    "6OTksWilEIH_vzPT1JfF_$$6tA6aJrt1NAYgSVR5r27m" : {
+      "id" : "6OTksWilEIH_vzPT1JfF_$$6tA6aJrt1NAYgSVR5r27m",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "farmers_market_tax_report",
+        "slug" : "farmers_market_tax_report",
+        "x" : 2120.0000064282754,
+        "y" : 220,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "QjD0EI329tONyxw0gsYWE$$X2FGfKd5WzSy7_rX495Ev",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "1700/datasets/farmers_market_tax_report"
+      }
+    },
     "k3nS0ZBEay-SmGyF0RmoE$$AMu4m57ehEbplpVu-PO06" : {
       "id" : "k3nS0ZBEay-SmGyF0RmoE$$AMu4m57ehEbplpVu-PO06",
       "component" : "Reformat",
       "metadata" : {
-        "label" : "Reformat_11",
-        "slug" : "Reformat_11",
-        "x" : 1520.00034013066,
+        "label" : "CalcCases",
+        "slug" : "CalcCases",
+        "x" : 1520.0002573748438,
         "y" : 220,
         "language" : "python",
         "phase" : 0,
@@ -695,7 +702,7 @@
       "metadata" : {
         "label" : "IrsZipcodesSource",
         "slug" : "IrsZipcodesSource",
-        "x" : 120.00017354210975,
+        "x" : 120.0004795018707,
         "y" : 320,
         "language" : "python",
         "phase" : 0,
@@ -720,10 +727,10 @@
       "id" : "YOshD4mtpOAEVKQ_5aUM9$$gviJQ8S1mAPMeu6b1Z6it",
       "component" : "Reformat",
       "metadata" : {
-        "label" : "Reformat_1",
-        "slug" : "Reformat_1",
-        "x" : 1895.0829528808595,
-        "y" : 376.4000000000001,
+        "label" : "CalcPercents",
+        "slug" : "CalcPercents",
+        "x" : 1920.0002903339198,
+        "y" : 220,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -743,17 +750,66 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ ]
+        "columnsSelector" : [ "hAgHzSxeZVA-6z0nUi2TC$$MAVlPEYPua3sR98BoqRHt##no_fm_high_income", "hAgHzSxeZVA-6z0nUi2TC$$MAVlPEYPua3sR98BoqRHt##no_fm", "hAgHzSxeZVA-6z0nUi2TC$$MAVlPEYPua3sR98BoqRHt##has_fm_low_income", "hAgHzSxeZVA-6z0nUi2TC$$MAVlPEYPua3sR98BoqRHt##has_fm_high_income", "hAgHzSxeZVA-6z0nUi2TC$$MAVlPEYPua3sR98BoqRHt##no_fm_low_income", "hAgHzSxeZVA-6z0nUi2TC$$MAVlPEYPua3sR98BoqRHt##num_zipcodes", "hAgHzSxeZVA-6z0nUi2TC$$MAVlPEYPua3sR98BoqRHt##has_fm" ],
+        "expressions" : [ {
+          "target" : "has_fm_high_income_percent",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "100 * has_fm_high_income / (has_fm)"
+          },
+          "description" : ""
+        }, {
+          "target" : "no_fm_high_income_percent",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "100 * no_fm_high_income / (no_fm)"
+          },
+          "description" : ""
+        }, {
+          "target" : "has_fm_high_income",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "has_fm_high_income"
+          },
+          "description" : ""
+        }, {
+          "target" : "has_fm_low_income",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "has_fm_low_income"
+          },
+          "description" : ""
+        }, {
+          "target" : "no_fm_high_income",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "no_fm_high_income"
+          },
+          "description" : ""
+        }, {
+          "target" : "no_fm_low_income",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "no_fm_low_income"
+          },
+          "description" : ""
+        }, {
+          "target" : "num_zipcodes",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "num_zipcodes"
+          },
+          "description" : ""
+        } ]
       }
     },
     "tIhfAxJQB-pcVv4ldPaJv$$1k8MYOiRHQflvTcwtnu3p" : {
       "id" : "tIhfAxJQB-pcVv4ldPaJv$$1k8MYOiRHQflvTcwtnu3p",
       "component" : "Reformat",
       "metadata" : {
-        "label" : "Reformat_12",
-        "slug" : "Reformat_12",
-        "x" : 1320.0007124921515,
+        "label" : "CalcHasFm",
+        "slug" : "CalcHasFm",
+        "x" : 1320.0007020003115,
         "y" : 220,
         "language" : "python",
         "phase" : 0,
@@ -845,9 +901,9 @@
       "id" : "r0kwOWwgxUBGJlPYvNjKc$$fgT-0yCKnYPehJ6DyA5jk",
       "component" : "Aggregate",
       "metadata" : {
-        "label" : "Aggregate_5",
-        "slug" : "Aggregate_5",
-        "x" : 920.0007419185539,
+        "label" : "CountFarmersMarketsByZip",
+        "slug" : "CountFarmersMarketsByZip",
+        "x" : 920.0002590880505,
         "y" : 120,
         "language" : "python",
         "phase" : 0,
