@@ -7,13 +7,13 @@ from prophecy.utils import *
 from job.graph import *
 
 def pipeline(spark: SparkSession) -> None:
+    df_FarmersMarketsSource = FarmersMarketsSource(spark)
+    df_FilterOutNullZips = FilterOutNullZips(spark, df_FarmersMarketsSource)
+    df_CountFarmersMarketsByZip = CountFarmersMarketsByZip(spark, df_FilterOutNullZips)
     df_IrsZipcodesSource = IrsZipcodesSource(spark)
     df_FilterOutBadZips = FilterOutBadZips(spark, df_IrsZipcodesSource)
     df_CastDataTypes = CastDataTypes(spark, df_FilterOutBadZips)
     df_SumIncomeBracketsByZip = SumIncomeBracketsByZip(spark, df_CastDataTypes)
-    df_FarmersMarketsSource = FarmersMarketsSource(spark)
-    df_FilterOutNullZips = FilterOutNullZips(spark, df_FarmersMarketsSource)
-    df_CountFarmersMarketsByZip = CountFarmersMarketsByZip(spark, df_FilterOutNullZips)
     df_CalcIsHighIncome = CalcIsHighIncome(spark, df_SumIncomeBracketsByZip)
     df_JoinFarmersMarketsAndIncome = JoinFarmersMarketsAndIncome(
         spark, 

@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "51",
+    "fabricId" : "382",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -52,27 +52,54 @@
     }
   },
   "connections" : [ {
-    "id" : "l-HiPAYalcIotWGsloYf0",
-    "source" : "PYdvEEOC_-HeftU0SQvEh$$A7cadYJPuS80moNAb2Uur",
-    "sourcePort" : "75BuGz1gmHh2c9RvcM73c$$4K-A3BlbpVtJ-PEz9s1kK",
-    "target" : "F2hH1fpu2n8QH9KEPBk-6$$9D2cKJ4EJDIIKs4xTIFzE",
-    "targetPort" : "EuDwBpDGkuuUb2PvIHb1p$$j-AS2YHdiTHhE4DjyY7Ay"
-  }, {
     "id" : "geaAxLAj0zmGLoHvbejCy",
     "source" : "F2hH1fpu2n8QH9KEPBk-6$$9D2cKJ4EJDIIKs4xTIFzE",
     "sourcePort" : "VgILFxyfdWD2OWlfAkp0x$$T4ucpjrZ8BRx-Gxm8wtQW",
     "target" : "OGq6CgWE70_lIO3_scj1e$$2i-2d1nApvv0igSa_7CAu",
     "targetPort" : "j2bz_MYZg4MDb-w-3fTbe$$866olo3DzNqQdgzXZO0Rp"
+  }, {
+    "id" : "-2cLBraM5pPkor0TGA-53",
+    "source" : "0mGB2Fa8HcTjcpD3ml7KI$$D3hBiUXDKeUkmcqRl6gKn",
+    "sourcePort" : "6G7MhXyEvfNAR_iCt_vCm$$xk9K9WuLyihhJTDO1mCZs",
+    "target" : "F2hH1fpu2n8QH9KEPBk-6$$9D2cKJ4EJDIIKs4xTIFzE",
+    "targetPort" : "EuDwBpDGkuuUb2PvIHb1p$$j-AS2YHdiTHhE4DjyY7Ay"
   } ],
   "processes" : {
+    "0mGB2Fa8HcTjcpD3ml7KI$$D3hBiUXDKeUkmcqRl6gKn" : {
+      "id" : "0mGB2Fa8HcTjcpD3ml7KI$$D3hBiUXDKeUkmcqRl6gKn",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "hospital_beds",
+        "slug" : "hospital_beds",
+        "x" : 120.00063755906965,
+        "y" : 120,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "6G7MhXyEvfNAR_iCt_vCm$$xk9K9WuLyihhJTDO1mCZs",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "2109/datasets/hospital_beds"
+      }
+    },
     "OGq6CgWE70_lIO3_scj1e$$2i-2d1nApvv0igSa_7CAu" : {
       "id" : "OGq6CgWE70_lIO3_scj1e$$2i-2d1nApvv0igSa_7CAu",
       "component" : "Reformat",
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "Reformat_1",
-        "x" : 765,
-        "y" : 213,
+        "x" : 520.000045944768,
+        "y" : 120,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -102,8 +129,8 @@
       "metadata" : {
         "label" : "Aggregate_1",
         "slug" : "Aggregate_1",
-        "x" : 501,
-        "y" : 210,
+        "x" : 320.0000464186236,
+        "y" : 120,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -133,6 +160,14 @@
           },
           "description" : "",
           "_row_id" : ""
+        }, {
+          "target" : "num_rows",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "count(1)"
+          },
+          "description" : "",
+          "_row_id" : ""
         } ],
         "pivotColumn" : null,
         "pivotValues" : [ ],
@@ -147,33 +182,6 @@
           "description" : "",
           "_row_id" : null
         } ]
-      }
-    },
-    "PYdvEEOC_-HeftU0SQvEh$$A7cadYJPuS80moNAb2Uur" : {
-      "id" : "PYdvEEOC_-HeftU0SQvEh$$A7cadYJPuS80moNAb2Uur",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "hospital_beds",
-        "slug" : "hospital_beds",
-        "x" : 285,
-        "y" : 238,
-        "language" : "python",
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "75BuGz1gmHh2c9RvcM73c$$4K-A3BlbpVtJ-PEz9s1kK",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "1700/datasets/hospital_beds"
       }
     }
   },

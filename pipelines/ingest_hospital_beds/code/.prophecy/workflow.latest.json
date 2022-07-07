@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "51",
+    "fabricId" : "382",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -96,7 +96,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "1700/datasets/hospital_beds"
+        "datasetId" : "2109/datasets/hospital_beds"
       }
     },
     "tUYrGMA3V-baZv1LcFAQ6$$Pokr0el2N-5sQwx1yg08i" : {
@@ -170,7 +170,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "1700/datasets/hospital_beds_input"
+        "datasetId" : "2109/datasets/hospital_beds_input"
       }
     }
   },

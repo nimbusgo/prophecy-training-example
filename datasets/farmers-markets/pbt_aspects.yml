@@ -3,7 +3,7 @@ schema:
   type: struct
   fields:
   - name: FMID
-    type: string
+    type: integer
     nullable: true
     metadata: {}
   - name: MarketName
@@ -83,11 +83,11 @@ schema:
     nullable: true
     metadata: {}
   - name: x
-    type: string
+    type: double
     nullable: true
     metadata: {}
   - name: y
-    type: string
+    type: double
     nullable: true
     metadata: {}
   - name: Location
