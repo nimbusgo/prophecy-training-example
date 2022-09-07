@@ -17,9 +17,11 @@ def main():
                 .config("spark.sql.legacy.allowUntypedScalaUDF", "true")\
                 .enableHiveSupport()\
                 .appName("Prophecy Pipeline")\
-                .getOrCreate()
+                .getOrCreate()\
+                .newSession()
     Utils.initializeFromArgs(spark, parse_args())
-    MetricsCollector.start(spark)
+    spark.conf.set("prophecy.metadata.pipeline.uri", "2109/pipelines/hospital_beds_report")
+    MetricsCollector.start(spark = spark, pipelineId = "2109/pipelines/hospital_beds_report")
     pipeline(spark)
     MetricsCollector.end(spark)
 

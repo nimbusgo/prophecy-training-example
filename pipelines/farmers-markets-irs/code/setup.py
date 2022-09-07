@@ -5,7 +5,7 @@ setup(
     packages = find_packages(include = ('job*', )),
     description = 'workflow',
     install_requires = [
-'prophecy-libs==1.1.8'],
+'prophecy-libs==1.3.4'],
     entry_points = {
 'console_scripts' : [
 'main = job.pipeline:main', ], },

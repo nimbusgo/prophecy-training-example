@@ -1,3 +1,3 @@
-from .hospital_beds_input import hospital_beds_input
-from .hospital_beds import hospital_beds
-from .SchemaTransform_1 import SchemaTransform_1
+from .hospital_beds import *
+from .SchemaTransform_1 import *
+from .hospital_beds_input import *

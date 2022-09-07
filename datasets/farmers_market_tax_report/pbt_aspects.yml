@@ -3,11 +3,11 @@ schema:
   type: struct
   fields:
   - name: has_fm_high_income_percent
-    type: double
+    type: integer
     nullable: true
     metadata: {}
   - name: no_fm_high_income_percent
-    type: double
+    type: integer
     nullable: true
     metadata: {}
   - name: has_fm_high_income

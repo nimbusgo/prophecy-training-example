@@ -25,24 +25,9 @@
           "optional" : false
         } ]
       },
-      "fabrics" : {
-        "dev" : {
-          "type" : "record",
-          "fields" : [ ]
-        },
-        "test" : {
-          "type" : "record",
-          "fields" : [ ]
-        },
-        "Remove" : {
-          "type" : "record",
-          "fields" : [ ]
-        },
-        "demos" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      }
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default"
     },
     "sparkConf" : [ ],
     "hadoopConf" : [ ],
@@ -80,7 +65,6 @@
         "slug" : "hospital_beds",
         "x" : 1036,
         "y" : 302,
-        "language" : "python",
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -107,7 +91,6 @@
         "slug" : "SchemaTransform_1",
         "x" : 757,
         "y" : 302,
-        "language" : "python",
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -154,7 +137,6 @@
         "slug" : "hospital_beds_input",
         "x" : 502,
         "y" : 303,
-        "language" : "python",
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
